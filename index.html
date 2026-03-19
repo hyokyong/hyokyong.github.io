@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이름 — Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a href="#" class="nav-logo">NAME.DEV</a>
+      <ul class="nav-links">
+        <li><a href="#about">소개</a></li>
+        <li><a href="#career">경력</a></li>
+        <li><a href="#projects">프로젝트</a></li>
+        <li><a href="#skills">스킬</a></li>
+        <li><a href="#education">학력</a></li>
+      </ul>
+      <a href="mailto:hello@email.com" class="nav-cta">연락하기</a>
+    </nav>
+
+    <!-- HERO -->
+    <div class="container">
+      <section id="hero" style="border: none">
+        <div class="hero-eyebrow">
+          <span class="hero-dot"></span>
+          오픈 투 워크
+        </div>
+        <h1 class="hero-title">
+          여기에<br />
+          <em>한 줄 소개</em><br />
+          문구를 쓰세요.
+        </h1>
+        <p class="hero-sub">
+          직군과 <strong>핵심 강점</strong>을 한두 문장으로 소개해 주세요. 어떤
+          개발자인지, 무엇을 중요하게 생각하는지 담으면 좋아요.
+        </p>
+        <div class="hero-actions">
+          <a href="#career" class="btn btn-dark">경력 보기 →</a>
+          <a href="#skills" class="btn btn-outline">기술 스택</a>
+          <a href="https://github.com/" target="_blank" class="btn btn-outline"
+            >GitHub</a
+          >
+          <a href="mailto:hello@email.com" class="btn btn-outline">이메일</a>
+        </div>
+        <p class="hero-scroll">스크롤로 더 보기</p>
+      </section>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num">N+</div>
+        <div class="stat-label">Years experience</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">N</div>
+        <div class="stat-label">Projects shipped</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">N</div>
+        <div class="stat-label">Teams worked with</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- ABOUT -->
+      <section id="about">
+        <p class="section-label">About</p>
+        <h2 class="section-title">이름을 입력하세요.</h2>
+        <div class="section-title-underline"></div>
+        <div style="max-width: 600px">
+          <p>
+            첫 번째 핵심역량 문단입니다. <strong>강조할 내용</strong>을 중심으로
+            짧게 작성해 주세요.
+          </p>
+          <p>
+            두 번째 핵심역량 문단입니다. 경력에서 주도한 일이나 차별화된 강점을
+            담아주세요.
+          </p>
+          <p>세 번째 핵심역량 문단입니다.</p>
+        </div>
+      </section>
+
+      <!-- CAREER -->
+      <section id="career">
+        <p class="section-label">Career</p>
+        <h2 class="section-title">경력</h2>
+        <div class="section-title-underline"></div>
+        <p class="section-sub">지금까지 쌓아온 경력을 소개합니다.</p>
+        <div class="timeline">
+          <div class="timeline-item current">
+            <div class="timeline-meta">
+              <span class="timeline-company">회사명</span>
+              <span class="timeline-period">20XX.XX ~ 현재</span>
+            </div>
+            <p class="timeline-role">직책 · 고용 형태</p>
+            <p class="timeline-desc">
+              이 회사에서 어떤 일을 했는지 2~3문장으로 설명해 주세요. 팀 규모,
+              주요 역할, 성과 등을 담으면 좋아요.
+            </p>
+            <div class="timeline-skills">
+              <span class="pill">기술1</span>
+              <span class="pill">기술2</span>
+              <span class="pill">기술3</span>
+            </div>
+          </div>
+
+          <!-- 경력 추가 시 아래 블록 복사 -->
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-company">이전 회사명</span>
+              <span class="timeline-period">20XX.XX ~ 20XX.XX</span>
+            </div>
+            <p class="timeline-role">직책 · 고용 형태</p>
+            <p class="timeline-desc">
+              이전 직장에서의 경험을 간략히 설명해 주세요.
+            </p>
+            <div class="timeline-skills">
+              <span class="pill">기술1</span>
+              <span class="pill">기술2</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <p class="section-label">Projects</p>
+        <h2 class="section-title">프로젝트</h2>
+        <div class="section-title-underline"></div>
+        <p class="section-sub">
+          직접 설계하고 개발한 주요 프로젝트입니다. 클릭하면 상세 내용을 볼 수
+          있어요.
+        </p>
+        <div class="projects-grid">
+          <!-- 프로젝트 카드 — thumb: 이모지 또는 <img src="images/..."> -->
+          <div class="project-card" onclick="openModal('p1')">
+            <div class="project-thumb" style="background: #eff4ff">
+              <span class="project-thumb-emoji">🚀</span>
+            </div>
+            <div class="project-body">
+              <div class="project-name">프로젝트명 1</div>
+              <p class="project-desc">프로젝트 한 줄 설명을 입력하세요.</p>
+            </div>
+          </div>
+
+          <div class="project-card" onclick="openModal('p2')">
+            <div class="project-thumb" style="background: #f0fdf4">
+              <span class="project-thumb-emoji">💡</span>
+            </div>
+            <div class="project-body">
+              <div class="project-name">프로젝트명 2</div>
+              <p class="project-desc">프로젝트 한 줄 설명을 입력하세요.</p>
+            </div>
+          </div>
+
+          <div class="project-card" onclick="openModal('p3')">
+            <div class="project-thumb" style="background: #fff7ed">
+              <span class="project-thumb-emoji">🎯</span>
+            </div>
+            <div class="project-body">
+              <div class="project-name">프로젝트명 3</div>
+              <p class="project-desc">프로젝트 한 줄 설명을 입력하세요.</p>
+            </div>
+          </div>
+
+          <div class="project-card" onclick="openModal('p4')">
+            <div class="project-thumb" style="background: #fdf4ff">
+              <span class="project-thumb-emoji">🌱</span>
+            </div>
+            <div class="project-body">
+              <div class="project-name">프로젝트명 4</div>
+              <p class="project-desc">프로젝트 한 줄 설명을 입력하세요.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <p class="section-label">Skills</p>
+        <h2 class="section-title">기술 스택</h2>
+        <div class="section-title-underline"></div>
+        <p class="section-sub">
+          실제 프로젝트에서 사용하며 쌓아온 기술들입니다.
+        </p>
+
+        <!-- 카테고리 추가 시 아래 .skill-group 블록 복사 -->
+        <div class="skill-group">
+          <div class="skill-group-label">Frontend</div>
+          <div class="skill-pills">
+            <span class="skill-pill primary">기술1</span>
+            <span class="skill-pill primary">기술2</span>
+            <span class="skill-pill primary">기술3</span>
+            <span class="skill-pill">기술4</span>
+            <span class="skill-pill">기술5</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">State Management / Data Fetching</div>
+          <div class="skill-pills">
+            <span class="skill-pill primary">기술1</span>
+            <span class="skill-pill">기술2</span>
+            <span class="skill-pill">기술3</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Ops / Tools</div>
+          <div class="skill-pills">
+            <span class="skill-pill">기술1</span>
+            <span class="skill-pill">기술2</span>
+            <span class="skill-pill">기술3</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education">
+        <p class="section-label">Education</p>
+        <h2 class="section-title">학력</h2>
+        <div class="section-title-underline"></div>
+        <div class="edu-item">
+          <div>
+            <div class="edu-school">학교명</div>
+            <div class="edu-major">전공명</div>
+          </div>
+          <div class="edu-period">20XX.XX ~ 20XX.XX</div>
+        </div>
+        <!-- 학력 추가 시 위 .edu-item 블록 복사 -->
+      </section>
+
+      <!-- CTA -->
+      <div class="cta-block">
+        <div>
+          <h3>같이 만들어요</h3>
+          <p>새로운 팀에서 좋은 제품을 만들고 싶습니다. 편하게 연락 주세요.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="mailto:hello@email.com" class="btn btn-dark"
+            >이메일 보내기 →</a
+          >
+          <a href="https://github.com/" target="_blank" class="btn btn-outline"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <p class="footer-copy">© 20XX 이름. 직접 설계하고 코딩했습니다.</p>
+          <div class="footer-links">
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="mailto:hello@email.com">Email</a>
+            <a href="tel:010-0000-0000">010-0000-0000</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+      <div class="modal">
+        <div class="modal-thumb" id="m-thumb"></div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <div class="modal-title" id="m-title"></div>
+              <div class="modal-period" id="m-period"></div>
+            </div>
+            <button class="modal-close" onclick="closeModalDirect()">✕</button>
+          </div>
+          <p class="modal-section-title">기술 스택</p>
+          <div class="modal-tags" id="m-tags"></div>
+          <p class="modal-section-title">프로젝트 소개</p>
+          <p class="modal-desc" id="m-desc"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
