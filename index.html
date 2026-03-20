@@ -17,10 +17,10 @@
       <div class="container nav-inner">
         <a href="#" class="nav-logo">LIA.DEV</a>
         <ul class="nav-links">
-          <li><a href="#about">소개</a></li>
           <li><a href="#career">경력</a></li>
           <li><a href="#projects">프로젝트</a></li>
           <li><a href="#skills">스킬</a></li>
+          <li><a href="#study-culture">일하는 방식</a></li>
         </ul>
         <a href="mailto:hyokyongyeon@gmail.com" class="nav-cta">연락하기</a>
       </div>
@@ -40,22 +40,47 @@
             개발자"</strong
           ><br />
           - 사용자 경험 개선과 서비스 성능 최적화에 집중하며 비즈니스 성과로
-          이어지는 개발을 추구합니다.<br />
+          이어지는 개발 경험이 있습니다.<br />
           - 팀 리딩 경험을 바탕으로 개발 프로세스를 개선하며 팀 전체가 함께
-          성장할 수 있는 환경을 만드는 데 기여하고 싶습니다.
+          성장할 수 있는 환경을 만들어갑니다.<br />
         </p>
+        <div class="hero-tech">
+          <span class="hero-tech-pill">React</span>
+          <span class="hero-tech-pill">TypeScript</span>
+          <span class="hero-tech-pill">Next.js</span>
+          <span class="hero-tech-pill">Vue.js</span>
+          <span class="hero-tech-pill">JavaScript</span>
+        </div>
         <div class="hero-actions">
           <a href="#career" class="btn btn-dark">경력 보기 →</a>
           <a
             href="https://github.com/hyokyong"
             target="_blank"
             class="btn btn-outline"
-            >GitHub</a
-          >
-          <a href="mailto:hyokyongyeon@gmail.com" class="btn btn-outline"
-            >이메일</a
-          >
-          <a href="tel:010-2591-3335" class="btn btn-outline">전화</a>
+            aria-label="GitHub"
+            ><span class="btn-icon" aria-hidden="true"
+              ><svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0.5C5.73 0.5 0.5 5.85 0.5 12.2c0 5.1 3.29 9.43 7.86 10.96.58.11.79-.26.79-.58v-2.02c-3.2.72-3.88-1.39-3.88-1.39-.52-1.33-1.28-1.68-1.28-1.68-1.05-.73.08-.72.08-.72 1.16.08 1.77 1.22 1.77 1.22 1.03 1.79 2.7 1.27 3.36.97.1-.76.4-1.27.73-1.56-2.55-.3-5.23-1.31-5.23-5.82 0-1.29.45-2.35 1.19-3.18-.12-.3-.52-1.52.11-3.17 0 0 .97-.32 3.18 1.2.92-.26 1.9-.39 2.88-.39.98 0 1.96.13 2.88.39 2.21-1.52 3.18-1.2 3.18-1.2.63 1.65.23 2.87.11 3.17.74.83 1.19 1.89 1.19 3.18 0 4.52-2.69 5.51-5.24 5.81.41.36.77 1.06.77 2.14v3.17c0 .32.21.69.8.58 4.56-1.53 7.85-5.86 7.85-10.96C23.5 5.85 18.27 0.5 12 0.5z"
+                /></svg></span
+          ></a>
+          <a
+            href="mailto:hyokyongyeon@gmail.com"
+            class="btn btn-outline"
+            aria-label="이메일"
+            ><span class="btn-icon" aria-hidden="true"
+              ><svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                /></svg></span
+          ></a>
+          <a href="tel:010-2591-3335" class="btn btn-outline" aria-label="전화"
+            ><span class="btn-icon" aria-hidden="true"
+              ><svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1l-2.2 2.21z"
+                /></svg></span
+          ></a>
         </div>
       </section>
     </div>
@@ -107,7 +132,7 @@
               개발 환경 표준화 및 셋업 시간 단축
             </p>
             <p class="timeline-desc">
-              React Query 캐싱 + Redux Toolkit 불변성 관리를 통한 성능 최적화
+              Tanstack Query 캐싱 + Redux Toolkit 불변성 관리를 통한 성능 최적화
             </p>
 
             <div class="timeline-title">
@@ -202,13 +227,14 @@
             <span class="project-tag">Keycloakify</span>
           </div>
           <div class="project-desc">
-            OAuth 2.0 Authorization Code Flow 기반 인증/인가 처리 설계 및 구현
+            <b>OAuth 2.0 Authorization Code Flow</b> 기반 인증/인가 처리 설계 및
+            구현
             <br />
-            PKCE(Proof Key for Code Exchange) 방식 적용으로 보안 강화
+            <b>PKCE(Proof Key for Code Exchange)</b> 방식 적용으로 보안 강화
             <br />
-            OpenID Connect 기반 토큰 관리 및 자동 갱신 로직 구현
+            <b>OpenID Connect 기반 토큰 관리</b> 및 자동 갱신 로직 구현
             <br />
-            WebView 환경에 최적화된 이벤트 처리 및 반응형 레이아웃 구현
+            <b>WebView 환경</b>에 최적화된 이벤트 처리 및 반응형 레이아웃 구현
             <br />
             Keycloakify를 활용한 Keycloak UI 커스터마이징
           </div>
@@ -237,14 +263,16 @@
             <span class="project-tag">Styled-components</span>
           </div>
           <div class="project-desc">
-            Vue.js → Next.js 마이그레이션 레거시 대응
-            <br />맥스트 디자인 시스템 적용 및 재사용 공통 컴포넌트 구현
-            <br />사용자/설비 그룹 관리, 원격 통화 및 체크시트 관리 REST API
-            연동<br />판매 상품 및 사용자 권한에 따른 12가지 UI 분기 처리
+            <b>Vue.js → Next.js</b> 마이그레이션 레거시 대응 <br />
+            <b>맥스트 디자인 시스템 적용</b> 및 재사용 공통 컴포넌트 구현
+            <br />사용자/설비 그룹 관리, 원격 통화 및 체크시트 관리
+            <b>REST API 연동</b><br />판매 상품 및 사용자 권한에 따른 12가지 UI
+            분기 처리
             <br />
-            Vuex Action 비동기 처리 로직 모듈화하여 코드 가독성 및 재사용성 향상
+            <b>Vuex Action 비동기 처리 로직 모듈화</b>하여 코드 가독성 및
+            재사용성 향상
             <br />
-            i18n 라이브러리를 활용한 한/영 다국어 지원 체계 구축
+            i18n 라이브러리를 활용한 한/영 <b>다국어 지원 체계 구축</b>
           </div>
           <div class="project-impact">
             DSME(대우조선해양) 등 B2B 고객사 구축형 솔루션 납품, 매출 증대 직접
@@ -266,11 +294,12 @@
             <span class="project-tag">Ant-design</span>
           </div>
           <div class="project-desc">
-            폴더 구조, 환경 변수, 절대 경로, 코드 스타일 등 공통 환경 전체
-            설계<br />
-            React Query 기반 데이터 호출/가공/리프레시/에러 처리 공통 로직
-            개발<br />
-            React Query 캐싱 + Redux Toolkit 불변성 관리를 통한 성능 최적화<br />
+            폴더 구조, 환경 변수, 절대 경로, 코드 스타일 등
+            <b>공통 환경 전체 설계</b><br />
+            React Query 기반
+            <b>데이터 호출/가공/리프레시/에러 처리 공통 로직</b> 개발<br />
+            <b>React Query 캐싱 + Redux Toolkit 불변성 관리</b>를 통한 성능
+            최적화<br />
             맥스버스 통합 인증 로그인 PASSPORT 연동
           </div>
           <div class="project-impact">
@@ -292,13 +321,16 @@
             <span class="project-tag">Styled-components</span>
           </div>
           <div class="project-desc">
-            Unity WebGL 스페이스 뷰어 연동 및 JS ↔ Unity 양방향 통신 처리<br />
-            SEO 최적화를 위한 메타 태그, 사이트맵, 시맨틱 마크업 전체 적용<br />
-            구글 스프레드시트 연동으로 문구 동적 업데이트 구현, 배포 빈도
+            <b>Unity WebGL 스페이스 뷰어 연동 및 JS ↔ Unity 양방향 통신 처리</b
+            ><br />
+            <b>SEO 최적화</b>를 위한 메타 태그, 사이트맵, 시맨틱 마크업 전체
+            적용<br />
+            구글 스프레드시트 연동으로 <b>문구 동적 업데이트 구현</b>, 배포 빈도
             축소<br />Recoil 도입으로 상태 관리 코드 최소화 및 반복 코드 제거
           </div>
           <div class="project-impact">
-            Next.js SSG 적용으로 페이지 로딩 속도 개선 및 서버 비용 절감에 기여
+            Next.js SSG 적용으로
+            <b>페이지 로딩 속도 개선 및 서버 비용 절감</b>에 기여
           </div>
         </div>
       </template>
@@ -316,11 +348,14 @@
             <span class="skill-pill primary">React</span>
             <span class="skill-pill primary">Next.js</span>
             <span class="skill-pill primary">TypeScript</span>
+            <span class="skill-pill primary">JavaScript</span>
             <span class="skill-pill primary">Vue.js</span>
             <span class="skill-pill">Nuxt.js</span>
-            <span class="skill-pill">Tailwind CSS</span>
-            <span class="skill-pill primary">Styled-components</span>
+            <span class="skill-pill primary">Tailwind CSS</span>
+            <span class="skill-pill">Styled-components</span>
             <span class="skill-pill">Sass</span>
+            <span class="skill-pill">Html5</span>
+            <span class="skill-pill">CSS</span>
           </div>
         </div>
 
@@ -356,6 +391,33 @@
             <span class="skill-pill">Confluence</span>
             <span class="skill-pill">Figma</span>
           </div>
+        </div>
+      </section>
+
+      <!-- STUDY & CULTURE -->
+      <section id="study-culture">
+        <p class="section-label">Collaboration & Growth</p>
+        <h2 class="section-title">일하는 방식</h2>
+        <div class="section-title-underline"></div>
+        <div class="study-culture-items">
+          <div class="study-culture-item">
+            서비스 기획 · 디자인 · 개발 전 주기에 참여하여 제품 완성도와
+            비즈니스 가치 향상에 기여
+          </div>
+          <div class="study-culture-item">
+            Cursor AI, LLM(Claude/Gemini)을 워크플로우에 통합하여 개발 속도 및
+            코드 품질 최적화
+          </div>
+          <div class="study-culture-item">
+            PR 기반 코드 리뷰 문화 도입 및 정착
+          </div>
+          <div class="study-culture-item">
+            프론트엔드 공통 코드 컨벤션 수립으로 개발 효율성 향상
+          </div>
+          <div class="study-culture-item">
+            데일리 스크럼을 통한 진행 상황 공유 및 팀 커뮤니케이션 강화
+          </div>
+          <div class="study-culture-item">주 1회 사내 기술 스터디 주도</div>
         </div>
       </section>
 

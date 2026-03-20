@@ -3,7 +3,8 @@
   --surface: #ffffff;
   --text: #111110;
   --muted: #2a2a27;
-  --subtle: #666663;
+  --subtitle: #232321;
+  --subtle: #51514e;
   --border: #e4e3de;
   --accent-soft: #f0efe9;
   --blue: #1a56db;
@@ -149,10 +150,9 @@ h1.hero-title em {
 }
 .hero-sub {
   font-size: 16px;
-  color: var(--muted);
+  color: var(--subtitle);
   /* max-width: 480px; */
   line-height: 1.75;
-  margin-bottom: 40px;
   /* font-weight: 400; */
 }
 .hero-sub strong {
@@ -160,11 +160,43 @@ h1.hero-title em {
   color: var(--text);
   font-weight: 500;
 }
+
+/* ── HERO TECH ── */
+.hero-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.hero-tech-pill {
+  font-size: 13px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  letter-spacing: -0.1px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  background: var(--surface);
+}
+
 .hero-actions {
   display: flex;
   gap: 12px;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.btn-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 /* ── BUTTONS ── */
@@ -224,6 +256,29 @@ section {
   background: #49bf9d;
   border-radius: 2px;
   margin-bottom: 40px;
+}
+
+/* ── STUDY & CULTURE ── */
+.study-culture-items {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.study-culture-item {
+  font-size: 17px;
+  color: var(--subtle);
+  /* line-height: 1.75; */
+  font-weight: 500;
+  position: relative;
+  padding-left: 20px;
+}
+.study-culture-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  color: var(--subtle);
+  font-weight: 700;
 }
 
 /* ── CAREER ── */
@@ -617,7 +672,7 @@ footer {
   font-size: 14px;
   padding: 4px 12px;
   border-radius: 20px;
-  background: var(--accent-soft);
+  background: var(--bg);
   color: var(--muted);
   border: 1px solid var(--border);
 }
