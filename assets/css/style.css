@@ -65,7 +65,7 @@ nav {
   display: flex;
   gap: 32px;
   list-style: none;
-  margin-left: 24px;
+  margin-left: 40px;
   margin-right: 0;
 }
 .nav-links a {
@@ -101,7 +101,7 @@ nav {
 
 /* ── HERO ── */
 #hero {
-  padding: 160px 0 100px;
+  padding: 160px 0 50px;
   animation: fadeUp 0.7s ease both;
 }
 .hero-eyebrow {
@@ -169,6 +169,11 @@ h1.hero-title em {
   margin-top: 10px;
   margin-bottom: 40px;
 }
+
+.hero-actions a {
+  max-width: 120px;
+}
+
 .hero-tech-pill {
   font-size: 13px;
   padding: 5px 12px;
@@ -177,13 +182,6 @@ h1.hero-title em {
   border: 1px solid var(--border);
   color: var(--muted);
   background: var(--surface);
-}
-
-.hero-actions {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .btn-icon {
@@ -201,18 +199,25 @@ h1.hero-title em {
 
 /* ── BUTTONS ── */
 .btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 10px;
-  padding: 11px 20px;
-  border-radius: 24px;
+  /* padding: 11px 20px; */
+  /* border-radius: 24px; */
+  color: var(--text);
   font-size: 15px;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.2s;
   border: none;
-  cursor: pointer;
+  /* cursor: pointer; */
   font-family: inherit;
+  margin-bottom: 10px;
+}
+
+/* 클릭/방문 상태(:visited)에서 보라색으로 바뀌지 않게 */
+.btn:visited {
+  color: inherit;
 }
 .btn-dark {
   background: var(--text);
@@ -230,9 +235,13 @@ h1.hero-title em {
   border-color: var(--text);
 }
 
+.btn-static {
+  cursor: default;
+}
+
 /* ── SECTION ── */
 section {
-  padding: 50px 0;
+  padding: 70px 0;
   border-top: 1px solid var(--border);
 }
 .section-label {
@@ -503,6 +512,7 @@ section {
   border-bottom: 1px solid var(--border);
   border-top: 1px solid var(--border);
   margin-top: -1px;
+  margin-bottom: 100px;
 }
 .edu-school {
   font-family: inherit;
