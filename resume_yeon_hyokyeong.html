@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연효경 이력서</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 13px;
+        color: #1a1a1a;
+        background: #f5f5f5;
+        line-height: 1.7;
+      }
+
+      .page {
+        width: 794px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 56px 60px;
+      }
+
+      /* Header */
+      .header {
+        margin-bottom: 36px;
+        border-bottom: 2px solid #1a1a1a;
+        padding-bottom: 24px;
+      }
+      .header h1 {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        margin-bottom: 4px;
+      }
+      .header .role {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 14px;
+      }
+      .header .contact {
+        display: flex;
+        gap: 20px;
+        font-size: 12px;
+        color: #444;
+        margin-bottom: 5px;
+
+        span:first-child {
+          width: 40px;
+        }
+      }
+      .header .contact a {
+        color: #444;
+        /* text-decoration: none; */
+      }
+
+      /* Section */
+      section {
+        margin-bottom: 32px;
+      }
+      .section-title {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #888;
+        margin-bottom: 14px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #e8e8e8;
+      }
+
+      /* Intro */
+      .intro p {
+        font-size: 12px;
+        color: #333;
+        line-height: 1.9;
+      }
+
+      /* Career */
+      .career-item {
+        margin-bottom: 28px;
+      }
+      .career-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 4px;
+      }
+      .company {
+        font-size: 15px;
+        font-weight: 700;
+      }
+      .period {
+        font-size: 12px;
+        color: #888;
+      }
+      .career-role {
+        font-size: 12px;
+        color: #666;
+        margin-bottom: 12px;
+      }
+
+      .project {
+        margin-bottom: 25px;
+        padding-left: 0;
+      }
+      .project-name {
+        font-size: 15px;
+        font-weight: 600;
+        color: #1a1a1a;
+      }
+      .project-name span {
+        font-size: 11px;
+        font-weight: 400;
+        color: #888;
+        margin-left: 6px;
+      }
+      .project-desc {
+        font-size: 12px;
+        color: #333;
+        margin-bottom: 6px;
+      }
+      .project ul {
+        padding-left: 16px;
+      }
+      .project ul li {
+        font-size: 12.5px;
+        color: #333;
+        margin-bottom: 3px;
+        list-style: disc;
+      }
+      .project ul li.tech-stack {
+        font-weight: 600;
+        color: #555;
+      }
+
+      /* Skills */
+      .skills-grid {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        gap: 8px 0;
+      }
+      .skill-label {
+        font-size: 12px;
+        font-weight: 600;
+        color: #555;
+        padding-top: 2px;
+      }
+      .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+      .tag {
+        font-size: 11px;
+        background: #f2f2f2;
+        color: #333;
+        padding: 3px 9px;
+        border-radius: 3px;
+      }
+
+      /* Collaboration */
+      .collab-list {
+        padding-left: 16px;
+      }
+      .collab-list li {
+        font-size: 12.5px;
+        color: #333;
+        margin-bottom: 5px;
+        list-style: disc;
+      }
+
+      /* Education */
+      .edu-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+      .edu-name {
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .edu-detail {
+        font-size: 12px;
+        color: #666;
+        margin-top: 2px;
+      }
+
+      @media print {
+        body {
+          background: #fff;
+        }
+        .page {
+          margin: 0;
+          padding: 48px 52px;
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <!-- Header -->
+      <div class="header">
+        <h1>연효경</h1>
+        <div class="role">Frontend Developer · 5년 경력</div>
+        <div class="contact">
+          <span>Github</span>
+          <a href="https://github.com/hyokyong" target="_blank">
+            https://github.com/hyokyong
+          </a>
+        </div>
+        <div class="contact">
+          <span>Portfolio</span>
+          <a href="https://hyokyong.github.io" target="_blank">
+            https://hyokyong.github.io
+          </a>
+        </div>
+        <div class="contact">
+          <span>Email</span>
+          <span>hyokyongyeon@gmail.com</span>
+        </div>
+      </div>
+
+      <!-- 소개 -->
+      <section class="intro">
+        <div class="section-title">소개</div>
+        <p>
+          <b>"코드 품질부터 팀 문화까지, 서비스의 성장을 함께 만드는 개발자"</b
+          ><br />
+          사용자 경험 개선과 서비스 성능 최적화에 집중하며 비즈니스 성과로
+          이어지는 개발 경험이 있습니다.<br />
+          팀 리딩 경험을 바탕으로 개발 프로세스를 개선하며 팀 전체가 함께 성장할
+          수 있는 환경을 만들어갑니다.<br />
+          <b>React · TypeScript · Next.js · Vue.js · JavaScript</b>를 주로
+          사용합니다.
+        </p>
+      </section>
+
+      <!-- 경력 -->
+      <section>
+        <div class="section-title">경력</div>
+        <div class="career-item">
+          <div class="career-header">
+            <span class="company">맥스트 (비트맥스)</span>
+          </div>
+          <div class="career-role">
+            프론트엔드 개발 · 정규직 · 2019.09 – 2024.09 · 5년
+          </div>
+
+          <!-- MAXWORK -->
+          <div class="project">
+            <div class="project-name">
+              MAXWORK / MAXWORK SMART FACTORY
+              <span>2019.09 – 2022.09, 2024.03 - 2024.09</span>
+            </div>
+            <p class="project-desc">산업용 AR 솔루션 및 설비 점검 관리 플랫폼</p>
+            <ul>
+              <li><b>Vue.js → Next.js 마이그레이션 및 아키텍처 설계 리드</b></li>
+              <li>
+                <b>
+                  App Router의 서버 컴포넌트를 활용하여 클라이언트 하이드레이션 부하 감소, TBT(Total Blocking Time) 지표 개선</b>
+                </b>
+              </li>
+              <li>
+                <b>React Query, Recoil</b>을 활용한 <b>서버-클라이언트 상태 분리로 데이터 캐싱 효율화 및 API 통신 최적화</b>
+              </li>
+              <li>12종의 UI분기를 <b>객체 매핑 기반의 패턴으로 구조화</b>, <b>dynamic import를 적용하여 LCP(Largest Contentful Paint) 최적화</b>
+              <li>
+                <b>Unity-Web Bridge 모듈 구축</b>및 <b>Brotli 압축 최적화를 통한 로딩 시간 단축</b>
+              </li>
+              <li>
+                <b>Vuex Action 비동기 처리 로직 모듈화</b>하여 코드 가독성 및 재사용성 개선
+              </li>
+              <li><b>맥스트 디자인 시스템 적용</b> 및 <b>재사용 공통 컴포넌트 구현</b></li>
+              <li><b>Sass의 중첩, 믹스인 함수</b>를 통해 CSS 재사용성 및 유지보수 편의성 증대</li>
+              <li>i18n 라이브러리를 활용한 한/영 <b>다국어 대응 및 확장 가능한 언어관리 체계 구축</b></li>
+              <li>
+                DSME(대우조선해양) 등 B2B 고객사 구축형 솔루션 개발 및 대응, 매출 증대 직접
+                기여
+              </li>
+              <li class="tech-stack">
+                Vue.js · JavaScript · Vuex · Sass · Next.js · TypeScript ·
+                React-Query · Recoil · Styled-components
+              </li>
+            </ul>
+          </div>
+
+          <!-- MAXVERSE Web -->
+          <div class="project">
+            <div class="project-name">
+              MAXVERSE Space Viewer Web <span>2023.07 – 2024.09</span>
+            </div>
+            <p class="project-desc">
+              XR 메타버스 플랫폼 MAXVERSE의 스페이스 뷰어 소개 플랫폼
+            </p>
+            <ul>
+              <li>
+
+                  <b>Next.js SSG 적용으로 초기 로딩(FCP) 최적화 및 서버 비용 절감
+                </b>
+              </li>
+              <li>
+                <b>IntersectionObserver</b>를 활용한
+                <b>스크롤 기반 섹션 애니메이션 구현</b>
+              </li>
+              <li><b>Tailwind CSS</b>의 Utility Class를 활용하여 <b>UI 개발 생산성 향상</b></li>
+              <li><b>정적 파일용 리소스 서버</b>를 활용하여 이미지를 불러와 <b>LCP 지표 단축</b></li>
+              <li><b>React Hook Form</b>을 활용하여 <b>비제어 컴포넌트 방식으로 폼 상태를 관리</b>하고 불필요한 리렌더링 최소화</li>
+              <li>미디어 쿼리 및 유연한 레이아웃 구성을 통한 <b>모바일 반응형 UI 구현</b></li>
+              <li>
+                <b>시맨틱 마크업</b> 설계 및 동적 메타 데이터·사이트맵 자동화 적용을 통한 <b>검색 엔진 최적화(SEO)</b>
+              </li>
+              <li>
+                Unity WebGL XR 뷰어 연동 및
+                <b>JS ↔ Unity 양방향 통신 처리 구축</b>
+              </li>
+              <li>
+                <b>Google Sheets API 연동</b>을 통한 문구 관리 자동화로 단순 수정 목적의 배포 빈도 절감
+              </li>
+              <li class="tech-stack">
+                Next.js · TypeScript · React-Query · Redux-toolkit · Recoil ·
+                Tailwind CSS
+              </li>
+            </ul>
+          </div>
+
+          <!-- PASSPORT -->
+          <div class="project">
+            <div class="project-name">
+              MAXVERSE 통합 인증 서비스 PASSPORT <span>2023.01 – 2024.09</span>
+            </div>
+            <p class="project-desc">
+              한 번의 로그인으로 MAXVERSE 플랫폼을 통합 인증(Single Sign-On)하는
+              서비스
+            </p>
+            <ul>
+              <li>
+                <b
+                  >OAuth 2.0 / OIDC(OpenID Connect) 기반 통합 로그인 시스템 설계 및 구축으로
+                  안전한 단일 인증 환경 구현</b
+                >
+              </li>
+              <li>
+                <b>Authorization Code Flow 기반 인증/인가 아키텍처 설계 및 구현으로 토큰 탈취 방지 및 보안 표준 준수</b>
+              </li>
+              <li>
+                <b>PKCE(Proof Key for Code Exchange)</b> 도입을 통한 코드 탈취 방어 및 토큰 관리 강화
+              </li>
+              <li><b>OpenID Connect 표준 기반의 토큰 관리 및 자동 갱신 로직 구현</b>으로 사용자 세션 유지</li>
+              <li>
+                <b>서드파티 로그인 연동</b>을 위한 로그인 · 회원가입 · 서비스 가입 ·
+                프로필 등 <b>인증 전 주기 기능 구현</b>
+              </li>
+              <li>
+                <b>Keycloak Context 데이터를 React Props로 매핑하여 Freemarker UI 커스터마이징</b>
+              </li>
+              <li>
+                개발자 센터 · 연동 가이드 문서와 연계하여 SSO 서비스 전체 구조
+                완성에 기여
+              </li>
+              <li>
+                RAPA(한국전파진흥협회) 기술 피드백 대응 전담 및 요구사항 반영
+              </li>
+              <li class="tech-stack">
+                React.js · TypeScript · Tanstack Query · Recoil ·
+                Styled-components · Keycloak · Keycloakify
+              </li>
+            </ul>
+          </div>
+
+          <!-- Back-office -->
+          <div class="project">
+            <div class="project-name" style="padding-top: 30px;">
+              MAXVERSE Back-office Web <span>2023.06 – 2023.08</span>
+            </div>
+            <p class="project-desc">전사 서비스 관리를 위한 백오피스 공통 인프라</p>
+            <ul>
+              <li><b>Next.js 기반 공통 웹 아키텍처 설계</b>를 통한 기술 스택 표준화 및 협업 효율화</b></li>
+              <li>
+                <b>OIDC(OpenID Connect) 기반 인증 시스템 및 토큰 생명주기 관리</b> 로직 구현으로 보안성 및 세션 유지 UX 강화
+              </li>
+              <li>
+                <b>React Query 커스텀 훅 기반 데이터 페칭 인터페이스 표준화</b>로 데이터 호출/가공/에러 처리 로직의 재사용성 극대화
+              </li>
+              <li>
+                <b>상태 관리 이원화 전략(React Query 캐싱 + Redux Toolkit)</b> 적용으로 서버 데이터와 클라이언트 상태 관리 최적화
+              </li>
+              <li>
+                공통 베이스 아키텍처를 <b>Maxwork, Maxverse 프로젝트로 확장 적용하여 개발 리소스 절감 및 유지보수 일관성 확보</b>
+              </li>
+              <li class="tech-stack">
+                Next.js · TypeScript · React-Query · Redux-toolkit ·
+                Styled-components · Ant-design
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 일하는 방식 -->
+      <section>
+        <div class="section-title">일하는 방식</div>
+        <ul class="collab-list">
+          <li>
+            서비스 기획 · 디자인 · 개발 전 주기에 참여하여 제품 완성도와
+            비즈니스 가치 향상에 기여
+          </li>
+          <li>
+            Cursor AI, LLM(Claude/Gemini)을 워크플로우에 통합하여 개발 속도 및
+            코드 품질 최적화
+          </li>
+          <li>PR 기반 코드 리뷰 문화 도입 및 정착</li>
+          <li>
+            팀 커뮤니케이션을 통한 공통 코드 컨벤션 수립으로 개발 효율성 향상
+          </li>
+          <li>데일리 스크럼을 통한 진행 상황 공유 및 팀 커뮤니케이션 강화</li>
+          <li>
+            SRS(Software Requirements Specification) 작성을 통한 화면 별 기능
+            정의
+          </li>
+          <li>주 1회 사내 기술 스터디 주도</li>
+        </ul>
+      </section>
+
+      <!-- 학력 -->
+      <section>
+        <div class="section-title">학력</div>
+        <div class="edu-item">
+          <div>
+            <div class="edu-name">성공회대학교</div>
+            <div class="edu-detail">
+              소프트웨어 공학 &amp; 문화 기획 복수 전공
+            </div>
+          </div>
+          <span class="period">2014.03 – 2018.08</span>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
